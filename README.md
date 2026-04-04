@@ -41,7 +41,7 @@ Visualize complex energy metrics with beautifully integrated dynamic charts, all
 
 Here is a glimpse of our beautiful user interface in action:
 
-| **Home Interface** | **Data Analysis & Dashboard** |
+| **Home Interface** | **Our Competitive Edge** |
 |:---:|:---:|
 | <img src="src/assests/Screenshot%202026-04-04%20221535.png" alt="Home Screen" width="400"/> | <img src="src/assests/Screenshot%202026-04-04%20221549.png" alt="Data Analysis" width="400"/> |
 
