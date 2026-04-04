@@ -45,11 +45,11 @@ Here is a glimpse of our beautiful user interface in action:
 |:---:|:---:|
 | <img src="src/assests/Screenshot%202026-04-04%20221535.png" alt="Home Screen" width="400"/> | <img src="src/assests/Screenshot%202026-04-04%20221549.png" alt="Data Analysis" width="400"/> |
 
-| **Fault Detection System** | **Energy Prediction Tool** |
+| **Frequently Asked Questions (FAQ)** | **Services** |
 |:---:|:---:|
 | <img src="src/assests/Screenshot%202026-04-04%20221607.png" alt="Fault Detection" width="400"/> | <img src="src/assests/Screenshot%202026-04-04%20221848.png" alt="Energy Prediction" width="400"/> |
 
-| **Predictive Maintenance** | **Our Features Overview** |
+| **Fault detection** | **Predictive Maintenance** |
 |:---:|:---:|
 | <img src="src/assests/Screenshot%202026-04-04%20221902.png" alt="Predictive Maintenance" width="400"/> | <img src="src/assests/Screenshot%202026-04-04%20221933.png" alt="About Platform" width="400"/> |
 
