@@ -98,29 +98,10 @@ Make sure you have [Node.js](https://nodejs.org/) installed on your computer.
 
 ---
 
-## 🌐 Deployment (Vercel)
-
-This application is fully optimized for continuous deployment. Setting it up on Vercel takes less than a minute:
-
-1. Push your updated code to your **GitHub** repository.
-2. Log in to [Vercel](https://vercel.com/) and click **Add New Project**.
-3. Import your GitHub repository.
-4. Vercel will automatically detect the **Create React App** framework preset.
-5. Click **Deploy**. Vercel will build and launch your application instantly!
 
 ---
 
-## 👨‍💻 Contributors
 
-This project was brought to life by dedicated software and AI engineers. Special thanks to the development team!
-
-<div align="center">
-  <img src="src/assests/ahmed.jpg" alt="Team Member 1" width="100" style="border-radius: 50%"/>
-  <img src="src/assests/ahmed2.jpg" alt="Team Member 2" width="100" style="border-radius: 50%"/>
-  <img src="src/assests/ahmed3.jpg" alt="Team Member 3" width="100" style="border-radius: 50%"/>
-</div>
-
----
 <div align="center">
   <i>Built with ❤️ for a greener, smarter future.</i>
 </div>
