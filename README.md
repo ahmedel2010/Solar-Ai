@@ -43,15 +43,15 @@ Here is a glimpse of our beautiful user interface in action:
 
 | **Home Interface** | **Data Analysis & Dashboard** |
 |:---:|:---:|
-| <img src="src/assests/home.jpg" alt="Home Screen" width="400"/> | <img src="src/assests/data-analysis.jpg" alt="Data Analysis" width="400"/> |
+| <img src="src/assests/Screenshot%202026-04-04%20221535.png" alt="Home Screen" width="400"/> | <img src="src/assests/Screenshot%202026-04-04%20221549.png" alt="Data Analysis" width="400"/> |
 
 | **Fault Detection System** | **Energy Prediction Tool** |
 |:---:|:---:|
-| <img src="src/assests/fault-detection.jpg" alt="Fault Detection" width="400"/> | <img src="src/assests/energy-prediction.jpg" alt="Energy Prediction" width="400"/> |
+| <img src="src/assests/Screenshot%202026-04-04%20221607.png" alt="Fault Detection" width="400"/> | <img src="src/assests/Screenshot%202026-04-04%20221848.png" alt="Energy Prediction" width="400"/> |
 
 | **Predictive Maintenance** | **Our Features Overview** |
 |:---:|:---:|
-| <img src="src/assests/predictive-maintenance.jpg" alt="Predictive Maintenance" width="400"/> | <img src="src/assests/about.jpg" alt="About Platform" width="400"/> |
+| <img src="src/assests/Screenshot%202026-04-04%20221902.png" alt="Predictive Maintenance" width="400"/> | <img src="src/assests/Screenshot%202026-04-04%20221933.png" alt="About Platform" width="400"/> |
 
 ---
 
