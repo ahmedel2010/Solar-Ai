@@ -28,7 +28,7 @@
 }
 
 .file-input {
-    display: none; /* Hidden file input */
+    display: none; 
 }
 
 .loader-wrapper {
@@ -100,7 +100,7 @@
     100% { transform: rotate(360deg); }
 }
 
-/* Responsive Styles */
+
 @media (max-width: 768px) {
     .title {
         font-size: 2rem;

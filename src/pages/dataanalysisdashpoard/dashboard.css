@@ -13,14 +13,14 @@
     text-align: center;
   }
   
-  /* العنوان */
+  
   .title {
     color: white;
     font-size: 24px;
     margin-bottom: 30px;
   }
   
-  /* صندوق الرسوم البيانية */
+  
   .charts-container {
     display: flex;
     justify-content: space-between;
@@ -28,7 +28,7 @@
     gap: 20px;
   }
   
-  /* شكل الرسوم البيانية */
+  
   .chart-box {
     background: white;
     padding: 20px;

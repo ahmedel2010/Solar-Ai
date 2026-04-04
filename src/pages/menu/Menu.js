@@ -1,5 +1,5 @@
 import React from "react";
-import "./menu.css"; // Import the CSS file
+import "./menu.css"; 
 import { FaPerson } from "react-icons/fa6";
 import { FaHeart } from "react-icons/fa";
 import { GiQueenCrown } from "react-icons/gi";
@@ -10,8 +10,8 @@ import "aos/dist/aos.css";
 import { motion } from "framer-motion";
 
 
-import workersImage from "../../assests/fault-detection.jpg"; // صورة العمال مع الألواح الشمسية
-import houseImage from "../../assests/energy-prediction.jpg"; // صورة المنزل بالطاقة الشمسية
+import workersImage from "../../assests/fault-detection.jpg"; 
+import houseImage from "../../assests/energy-prediction.jpg"; 
 
 export default function SolarSolutions() {
   useEffect(() => {
@@ -57,7 +57,7 @@ export default function SolarSolutions() {
           </motion.div>
         </div>
 
-        {/* القسم الثاني - الميزات */}
+        
         <div className="specialty-section">
           <motion.div 
             className="specialty-text" 

@@ -12,7 +12,6 @@ import Hero from './pages/hero/Hero';
 import SolarGuide from './pages/solarGiude/SolarGuide';
 import ContactUs from './pages/contact/Contact';
 import FaultDetection from './pages/faultDetection/FaultDetection';
-import Slider from './pages/slider/Slider';
 import Footer from './pages/foooter/Footer';
 import EnergyPrediction from './pages/energypreiction/EnergyPrediction';
 import Dashboard from './pages/dataanalysisdashpoard/DataAnalysisDashpoard';

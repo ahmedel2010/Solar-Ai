@@ -3,7 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import "./services.css";
 import { motion } from "framer-motion";
-// Import your images here
+
 import faultDetectionImage from '../../assests/solar1.webp';
 import energyPredictionImage from '../../assests/solar2.webp';
 import dataAnalysisImage from '../../assests/solar3.avif';

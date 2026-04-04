@@ -4,7 +4,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useSpring, animated } from '@react-spring/web';
 import { useInView } from 'react-intersection-observer';
-import { FaSolarPanel, FaLeaf, FaBolt, FaCheck, FaTools, FaHeadset } from 'react-icons/fa'; // Import additional icons
+import { FaSolarPanel, FaLeaf, FaBolt, FaCheck, FaTools, FaHeadset } from 'react-icons/fa'; 
 import menImage from '../../assests/men.avif'; 
 
 function About() {

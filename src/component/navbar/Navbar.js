@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FiAlertOctagon } from "react-icons/fi";
-import { FaBars, FaTimes } from "react-icons/fa"; // Icons for the sidebar
-import './navbar.css'; // Import CSS file
+import { FaBars, FaTimes } from "react-icons/fa"; 
+import './navbar.css'; 
 import imgage from '../../assests/solari_logo.svg'
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,7 +14,7 @@ function Navbar() {
         <Link to="/">   <img src={imgage} style={{height:'100px',width:'140px'}}></img></Link>
       </div>
 
-      {/* Mobile dropdown menu */}
+      
       <div className={`center ${isOpen ? "open" : ""}`}>
         <Link to="/" onClick={() => setIsOpen(false)}>Home</Link>
         <Link to="/services" onClick={() => setIsOpen(false)}>Services</Link>

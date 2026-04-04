@@ -4,7 +4,7 @@ import "aos/dist/aos.css";
 import { motion } from "framer-motion";
 import "./hero.css";
 
-// استيراد الصورة
+
 import solarImage from "../../assests/men.avif";
 
 export default function DrivingChange() {
@@ -66,7 +66,7 @@ export default function DrivingChange() {
             <img src={solarImage} alt="Solar Worker" />
           </motion.div>
 
-          {/* القيم */}
+          
           <div className="values">
             <motion.div className="value-box" data-aos="fade-right">
               <h3>Energy Dependence</h3>

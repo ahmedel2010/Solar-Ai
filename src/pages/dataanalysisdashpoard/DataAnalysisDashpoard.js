@@ -5,7 +5,7 @@ import { Chart as ChartJS,
          LinearScale, 
          BarElement, 
          LineElement, 
-         PointElement, // Register PointElement
+         PointElement, 
          Title, 
          Tooltip, 
          Legend } from "chart.js";
@@ -13,13 +13,13 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import "./dashboard.css";
 
-// Register Chart.js components
+
 ChartJS.register(
   CategoryScale,
   LinearScale,
   BarElement,
   LineElement,
-  PointElement, // Register PointElement
+  PointElement, 
   Title,
   Tooltip,
   Legend
@@ -30,7 +30,7 @@ function Dashboard() {
     AOS.init({ duration: 1000 });
   }, []);
 
-  // Data for Energy Production Chart
+  
   const energyData = {
     labels: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
     datasets: [
@@ -45,7 +45,7 @@ function Dashboard() {
     ],
   };
 
-  // Data for Energy Consumption Chart
+  
   const consumptionData = {
     labels: ["Household", "Industry", "Commercial", "Agriculture"],
     datasets: [
@@ -62,13 +62,13 @@ function Dashboard() {
       <h2 className="title" data-aos="fade-down">Solar AI - Data Analysis Dashboard</h2>
 
       <div className="charts-container">
-        {/* Energy Production Chart */}
+        
         <div className="chart-box" data-aos="fade-right">
           <h3>Energy Production Over the Week</h3>
           <Line data={energyData} />
         </div>
 
-        {/* Energy Consumption Chart */}
+        
         <div className="chart-box" data-aos="fade-left">
           <h3>Energy Consumption Distribution</h3>
           <Bar data={consumptionData} />

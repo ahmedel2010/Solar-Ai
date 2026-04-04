@@ -13,14 +13,14 @@
     text-align: center;
   }
   
-  /* العنوان */
+  
   .title {
     color: white;
     font-size: 22px;
     margin-bottom: 20px;
   }
   
-  /* مربع التحميل */
+  
   .upload-box {
     width: 100%;
     height: 160px;
@@ -42,14 +42,14 @@
     background: rgba(52, 152, 219, 0.1);
   }
   
-  /* أيقونة الرفع */
+  
   .upload-icon {
     font-size: 50px;
     color: #3498db;
     margin-bottom: 10px;
   }
   
-  /* زر التحليل */
+  
   .upload-btn {
     margin-top: 20px;
     padding: 12px 25px;
@@ -67,7 +67,7 @@
     background: #27ae60;
   }
   
-  /* الإدخال المخفي */
+  
   .file-input {
     position: absolute;
     top: 0;
@@ -79,14 +79,14 @@
     z-index: 10;
   }
   
-  /* اسم الملف */
+  
   .file-name {
     font-size: 18px;
     font-weight: bold;
     color: #2c3e50;
   }
   
-  /* صندوق النتائج */
+  
   .result-box {
     margin-top: 20px;
     padding: 15px;

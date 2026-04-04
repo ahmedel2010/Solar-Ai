@@ -23,7 +23,7 @@ export default function ImageClassificationPage() {
     setUploadedImage(url);
     setStep('preview');
 
-    // Simulate processing delay and classification result
+    
     setTimeout(() => {
       const results = {
         diagnosis: 'A fine crack was detected in the upper right cell with hotspots.',

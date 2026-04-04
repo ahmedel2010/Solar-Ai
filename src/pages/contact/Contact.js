@@ -12,7 +12,7 @@ const ContactUs = () => {
 
   return (
     <div className="contact-container">
-      {/* العنوان الرئيسي */}
+      
       <motion.h1
         className="contact-title"
         initial={{ opacity: 0, y: -50 }}
@@ -22,7 +22,7 @@ const ContactUs = () => {
         Contact Us
       </motion.h1>
 
-      {/* معلومات التواصل */}
+      
       <div className="contact-info-container">
         <motion.div className="contact-info-box" data-aos="fade-up">
           <FaPhoneAlt className="icon" />
@@ -38,7 +38,7 @@ const ContactUs = () => {
         </motion.div>
       </div>
 
-      {/* نموذج الاتصال */}
+      
       <div className="contact-content">
         <motion.form className="contact-form" data-aos="fade-left">
           <div className="input-group">
@@ -66,7 +66,7 @@ const ContactUs = () => {
           </motion.button>
         </motion.form>
 
-        {/* خريطة أو صورة */}
+        
         <motion.div className="contact-map" data-aos="fade-right">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d111003.58784345229!2d30.86524316104445!3d31.108985160867086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f7d6f5d81b37dd%3A0xc665126f5d946571!2sKafr%20El-Shaikh%2C%20Kafr%20El-Sheikh%20Governorate!5e0!3m2!1sen!2seg!4v1703620311244!5m2!1sen!2seg"

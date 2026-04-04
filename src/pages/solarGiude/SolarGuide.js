@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import "./solarGuide.css"; // Design file
+import "./solarGuide.css"; 
 
 const faqData = [
   {

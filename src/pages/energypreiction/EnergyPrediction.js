@@ -9,14 +9,14 @@ function EnergyPrediction() {
   const [prediction, setPrediction] = useState(null);
 
   useEffect(() => {
-    AOS.init({ duration: 1000 }); // تفعيل الأنيميشن عند التمرير
+    AOS.init({ duration: 1000 }); 
   }, []);
 
   const handleFileUpload = (event) => {
     const file = event.target.files[0];
     if (file) {
       setFileName(file.name);
-      setPrediction(Math.floor(Math.random() * 500) + 100); // محاكاة تنبؤ عشوائي
+      setPrediction(Math.floor(Math.random() * 500) + 100); 
     }
   };
 

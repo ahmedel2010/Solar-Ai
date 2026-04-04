@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useSpring, animated } from "@react-spring/web";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { FaChevronUp } from "react-icons/fa"; // Importing the up arrow icon
+import { FaChevronUp } from "react-icons/fa"; 
 import "./home.css";
 
 function Home() {
@@ -57,12 +57,12 @@ function Home() {
 
   return (
     <div className="home">
-      {/* Background Video */}
+      
       <video autoPlay loop muted className="bg-video">
         <source src={require('../../assests/back.mp4')} type="video/mp4" />
       </video>
 
-      {/* Introduction Section */}
+      
       <div className="overlay" data-aos="fade-up">
         <h1 className="title">
           Harness the <span className="highlight">Power of</span> the Sun
@@ -75,7 +75,7 @@ function Home() {
         </button>
       </div>
 
-      {/* Modal */}
+      
       {isModalOpen && (
         <animated.div className="modal-overlay" style={overlayAnimation}>
           <animated.div className="modal" style={modalAnimation}>
@@ -88,7 +88,7 @@ function Home() {
         </animated.div>
       )}
       
-      {/* Scroll to Top Button */}
+      
       <div className="scroll-to-top" id="scrollToTopBtn" onClick={handleTop}>
         <FaChevronUp />
       </div>
