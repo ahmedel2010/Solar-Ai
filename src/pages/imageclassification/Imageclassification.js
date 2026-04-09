@@ -2,9 +2,7 @@ import React, { useState, useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { motion } from 'framer-motion';
-import Swal from 'sweetalert2'; 
-import './classiification.css'
-
+import Swal from 'sweetalert2';
 export default function ImageClassificationPage() {
   const [step, setStep] = useState('upload'); 
   const [uploadedImage, setUploadedImage] = useState(null);
@@ -54,9 +52,9 @@ export default function ImageClassificationPage() {
   };
 
   return (
-    <div className="classification-page">
+    <div className="bg-[#2B5161] min-h-screen p-[2rem] text-[#ffffff] font-['Segoe_UI',Tahoma,Geneva,Verdana,sans-serif]">
       <motion.h1
-        className="title"
+        className="text-center text-[2.8rem] mb-[2rem] tracking-[1px] max-md:text-[2rem] max-[480px]:text-[1.5rem]"
         initial={{ y: -50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6 }}
@@ -65,25 +63,25 @@ export default function ImageClassificationPage() {
       </motion.h1>
 
       <motion.div
-        className="card upload-card"
+        className="bg-[rgba(255,255,255,0.1)] rounded-[16px] p-[1.8rem] mx-auto my-[1.5rem] max-w-[650px] relative overflow-hidden max-md:p-[1.5rem] max-md:my-[1rem] max-[480px]:p-[1rem] max-[480px]:my-[0.5rem]"
         data-aos="fade-up"
         whileHover={{ scale: 1.02 }}
       >
-        <label htmlFor="fileInput" className="upload-label">
+        <label htmlFor="fileInput" className="cursor-pointer">
           Choose an image or drag it here
         </label>
         <input
           id="fileInput"
           type="file"
           accept="image/*"
-          className="file-input"
+          className="hidden"
           onChange={handleUpload}
         />
       </motion.div>
 
       {step === 'preview' && (
-        <div className="loader-wrapper">
-          <div className="spinner"></div>
+        <div className="flex flex-col items-center my-[2rem]">
+          <div className="border-[8px] border-[rgba(255,255,255,0.1)] border-t-[#ffffff] border-t-[8px] rounded-full w-[50px] h-[50px] animate-[spin_1s_linear_infinite] max-md:w-[40px] max-md:h-[40px] max-[480px]:w-[30px] max-[480px]:h-[30px]"></div>
           <p>Processing the image...</p>
         </div>
       )}
@@ -91,41 +89,41 @@ export default function ImageClassificationPage() {
       {step === 'result' && classificationResult && (
         <>
           <motion.div
-            className="card"
+            className="bg-[rgba(255,255,255,0.1)] rounded-[16px] p-[1.8rem] mx-auto my-[1.5rem] max-w-[650px] relative overflow-hidden max-md:p-[1.5rem] max-md:my-[1rem] max-[480px]:p-[1rem] max-[480px]:my-[0.5rem]"
             data-aos="fade-up"
             whileHover={{ scale: 1.02 }}
           >
-            <h2 className="card-title">Original Image</h2>
-            <img src={uploadedImage} alt="Original" className="img-preview" />
+            <h2 className="text-[1.5rem] font-bold mb-[1rem]">Original Image</h2>
+            <img src={uploadedImage} alt="Original" className="w-full rounded-[8px]" />
           </motion.div>
 
           <motion.div
-            className="card"
+            className="bg-[rgba(255,255,255,0.1)] rounded-[16px] p-[1.8rem] mx-auto my-[1.5rem] max-w-[650px] relative overflow-hidden max-md:p-[1.5rem] max-md:my-[1rem] max-[480px]:p-[1rem] max-[480px]:my-[0.5rem]"
             data-aos="fade-up"
             data-aos-delay="200"
             whileHover={{ scale: 1.02 }}
           >
-            <h2 className="card-title">Analysis Result</h2>
-            <div className="tips-section">
-              <h3>Defect Description:</h3>
+            <h2 className="text-[1.5rem] font-bold mb-[1rem]">Analysis Result</h2>
+            <div className="mt-[1rem]">
+              <h3 className="font-bold text-[1.2rem] mt-[1rem]">Defect Description:</h3>
               <p>{classificationResult.diagnosis}</p>
 
-              <h3>Repair Tips:</h3>
+              <h3 className="font-bold text-[1.2rem] mt-[1rem]">Repair Tips:</h3>
               <p style={{ whiteSpace: 'pre-line' }}>{classificationResult.tips}</p>
 
-              <h3>Probabilities:</h3>
+              <h3 className="font-bold text-[1.2rem] mt-[1rem]">Probabilities:</h3>
               <ul>
                 {Object.entries(classificationResult.probabilities).map(([key, value]) => (
                   <li key={key}>{key}: {(value * 100).toFixed(2)}%</li>
                 ))}
               </ul>
 
-              <div className="feedback">
+              <div className="flex items-center my-[1rem] max-[480px]:flex-col max-[480px]:items-start">
                 <span>Rate the accuracy of the analysis:</span>
                 {[1, 2, 3, 4, 5].map((num) => (
                   <button
                     key={num}
-                    className={`star ${rating >= num ? 'filled' : ''}`}
+                    className={`bg-none border-none text-[1.5rem] cursor-pointer max-md:text-[1.25rem] ${rating >= num ? 'text-[#ffa500]' : 'text-[#ffd700]'}`}
                     onClick={() => setRating(num)}
                   >
                     ★
@@ -133,7 +131,7 @@ export default function ImageClassificationPage() {
                 ))}
               </div>
 
-              <button className="download-btn" onClick={handleDownload}>
+              <button className="bg-[#4CAF50] text-white py-[10px] px-[20px] border-none rounded-[5px] cursor-pointer text-[1rem] hover:bg-[#45a049] max-md:py-[8px] max-md:px-[16px] max-md:text-[0.9rem] max-[480px]:w-full max-[480px]:p-[10px] max-[480px]:text-[1rem]" onClick={handleDownload}>
                 Download Result
               </button>
             </div>

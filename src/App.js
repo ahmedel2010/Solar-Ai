@@ -1,5 +1,4 @@
 import logo from './logo.svg';
-import './App.css';
 import Navbar from './component/navbar/Navbar';
 import { Route, Routes } from 'react-router';
 import Home from './pages/home/Home';

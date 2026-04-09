@@ -11,8 +11,6 @@ import { Chart as ChartJS,
          Legend } from "chart.js";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import "./dashboard.css";
-
 
 ChartJS.register(
   CategoryScale,
@@ -58,19 +56,19 @@ function Dashboard() {
   };
 
   return (
-    <div className="dashboard-container">
-      <h2 className="title" data-aos="fade-down">Solar AI - Data Analysis Dashboard</h2>
+    <div className="flex flex-col items-center justify-center bg-gradient-to-r from-[#0f2027] via-[#203a43] to-[#2c5364] p-[50px] rounded-[15px] shadow-[0_10px_30px_rgba(0,0,0,0.3)] w-[80%] my-[50px] mx-auto text-center">
+      <h2 className="text-white text-[24px] mb-[30px]" data-aos="fade-down">Solar AI - Data Analysis Dashboard</h2>
 
-      <div className="charts-container">
+      <div className="flex justify-between w-full gap-[20px]">
         
-        <div className="chart-box" data-aos="fade-right">
-          <h3>Energy Production Over the Week</h3>
+        <div className="bg-white p-[20px] rounded-[10px] shadow-[0_5px_15px_rgba(0,0,0,0.2)] w-[48%]" data-aos="fade-right">
+          <h3 className="mb-[10px] text-[#2c3e50] text-[18px]">Energy Production Over the Week</h3>
           <Line data={energyData} />
         </div>
 
         
-        <div className="chart-box" data-aos="fade-left">
-          <h3>Energy Consumption Distribution</h3>
+        <div className="bg-white p-[20px] rounded-[10px] shadow-[0_5px_15px_rgba(0,0,0,0.2)] w-[48%]" data-aos="fade-left">
+          <h3 className="mb-[10px] text-[#2c3e50] text-[18px]">Energy Consumption Distribution</h3>
           <Bar data={consumptionData} />
         </div>
       </div>

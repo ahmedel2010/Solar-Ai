@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import "./solarGuide.css"; 
-
 const faqData = [
   {
     question: "How does solar energy work?",
@@ -54,28 +52,28 @@ const SolarGuide = () => {
 
   return (
     <motion.div 
-      className="solar-guide"
+      className="w-[90%] max-md:w-[80%] max-w-[1200px] mx-auto my-[60px] p-[40px] bg-gradient-to-r from-[#0f2027] via-[#203a43] to-[#2c5364] rounded-[12px] shadow-[0_10px_30px_rgba(0,0,0,0.2)] text-white text-center"
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
     >
-      <div className="toptitle">Your Guide to Solar Solutions</div>
-      <p className="subtitle">
+      <div className="text-[34px] font-bold mb-[10px] text-[#00c6ff] max-md:text-[24px]">Your Guide to Solar Solutions</div>
+      <p className="text-[16px] mb-[20px] opacity-80 text-center max-md:text-[14px]">
         Explore everything you need to know about solar energy, from installation to savings.
       </p>
 
-      <div className="faq-container">
+      <div className="text-left">
         {faqData.map((item, index) => (
           <motion.div
             key={index}
-            className={`faq-item ${openIndex === index ? "open" : ""}`}
+            className={`bg-[rgba(255,255,255,0.1)] p-[15px] mb-[10px] rounded-[8px] cursor-pointer transition-all duration-300 ease-in-out hover:bg-[rgba(255,255,255,0.2)] ${openIndex === index ? "open" : ""}`}
             onClick={() => toggleAccordion(index)}
             whileHover={{ scale: 1.02 }}
             transition={{ duration: 0.2 }}
           >
-            <div className="faq-question">{item.question}</div>
+            <div className="text-[18px] font-bold max-md:text-[16px]">{item.question}</div>
             <motion.div
-              className="faq-answer"
+              className="text-[14px] pt-[10px] overflow-hidden max-md:text-[12px]"
               initial={{ height: 0, opacity: 0 }}
               animate={{
                 height: openIndex === index ? "auto" : 0,

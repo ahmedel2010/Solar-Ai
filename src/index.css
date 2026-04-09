@@ -1,4 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Sigmar&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
+  @apply bg-gradient-to-r from-[#0f2027] via-[#203a43] to-[#2c5364];
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
