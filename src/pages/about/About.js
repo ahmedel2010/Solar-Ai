@@ -23,7 +23,6 @@ function About() {
   });
 
   return (
-  return (
     <div className="flex justify-between items-center p-[60px] bg-[#0f2027] rounded-[10px] shadow-[0_4px_15px_rgba(0,0,0,0.1)] max-[920px]:flex-col">
       <div className="flex-1 overflow-hidden rounded-[10px]" ref={imageRef}>
         <animated.img src={menImage} alt="Solar Panel Service" className="w-[80%] object-cover rounded-[10px] max-[920px]:w-full max-[920px]:flex max-[920px]:items-center max-[920px]:justify-center max-[920px]:text-center" style={imageAnimation} />

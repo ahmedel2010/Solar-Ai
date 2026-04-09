@@ -55,7 +55,6 @@ function Home() {
   });
 
   return (
-  return (
     <div className="relative min-h-[100vh] flex flex-col overflow-hidden text-white bg-[#203a4344]">
       
       <video autoPlay loop muted className="absolute top-0 left-0 w-full h-full object-cover -z-10">

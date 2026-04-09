@@ -35,7 +35,6 @@ export default function Services() {
   ];
 
   return (
-  return (
     <section className="bg-gradient-to-r from-[#0f2027] via-[#203a43] to-[#2c5364] text-[#fff] py-[60px] px-[20px] text-center">
       <div className="max-w-[1200px] mx-auto">
         

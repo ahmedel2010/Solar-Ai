@@ -10,7 +10,6 @@ const ContactUs = () => {
   }, []);
 
   return (
-  return (
     <div className="bg-gradient-to-r from-[#0f2027] via-[#203a43] to-[#2c5364] text-[#00c6ff] min-h-screen flex flex-col items-center justify-center p-[50px]">
       
       <motion.h1
